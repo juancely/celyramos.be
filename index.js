@@ -1,22 +1,71 @@
 "use strict";
 
 const
-  config = {};
-  config.env = process.env.NODE_ENV == 'production' ? require('./config/env/production') : require('./config/env/development');
+  config  = require('./config/config')
+;
 
 const
-  express = require("express")
+  http    = require("http")
+, https   = require("https")
+, express = require("express")
+, fs      = require("fs")
 ;
 
 const app = express();
 
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
+      app.use(express.static('www'));
+      app.set('view engine', 'ejs');
 
-app.get('/', (req, res, next) => {
-  res.render('index',{});
-});
+const setServer = async () => {
+  let server = null;
+  if(config.env.name == "production"){
+    server = https.createServer(
+      {
+        key: fs.readFileSync('./csr.pem', 'utf8')
+      , cert: fs.readFileSync('./server.crt', 'utf8')
+      }
+      , app
+    );
+  }else{
+    server = http.createServer(app);
+  }
 
-app.listen(config.env.port, () => {
-  console.log("Server running on port: " + config.env.port);
+  return await server;
+}
+
+app
+  .get('/', (req, res, next) => {
+    res.render('index',{
+      title: "CelyRamos"
+    });
+  })
+  .get('/about', (req, res, next) => {
+    res.render('about',{
+      title: "About"
+    });
+  })
+  .get('/contact', (req, res, next) => {
+    res.render('contact',{
+      title: "Contact"
+    });
+  })
+
+  .post('/contact', (req, res, next) => {
+    res.render('contact',{
+      title: "Contact"
+    });
+  })
+;
+
+
+setServer().then(async (server)=>{
+  if(config.env.name == "production"){
+    server.listen(config.env.port, () => {
+      console.log("HTTPS Server running on port: " + config.env.port);
+    });
+  }else{
+    server.listen(config.env.port, () => {
+      console.log("HTTP Server running on port: " + config.env.port);
+    });
+  }
 });

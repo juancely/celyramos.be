@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #448ccb;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.33;
+      }
+
+      .cls-2 {
+        opacity: 0.43;
+      }
+
+      .cls-3 {
+        fill: #00bff3;
+        opacity: 0.39;
+      }
+
+      .cls-4 {
+        fill: #00aeef;
+        opacity: 0.57;
+      }
+
+      .cls-5 {
+        fill: #4e93bb;
+        opacity: 0.69;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M-115.992,275.2l347.017-229.2L479.992,311.8l-347.017,229.2Z"/>
+  <path class="cls-2" d="M691.5,11.157L917.967,209.434,735.5,417.843,509.033,219.566Z"/>
+  <path class="cls-3" d="M706.621,224.757L888.442,97.378,1047.38,324.243,865.558,451.622Z"/>
+  <path class="cls-4" d="M399.7,75.814L740.913,415.158,560.922,596.141,219.706,256.8Z"/>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-5" d="M646.084,443l-344.872-4.214L200.991,230.512,483.924,106.005,759.006,237.33Z"/>
+</svg>

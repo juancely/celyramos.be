@@ -1,0 +1,67 @@
+<%- include('./partials/header'); %>
+
+<div class="main-inner container">
+  <h1 class="title is-1"><%= title; %></h1>
+
+  <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+    <ul>
+      <li>
+        <a href="/">
+          <span class="icon is-small">
+            <i class="fas fa-home" aria-hidden="true"></i>
+          </span>
+          <span>Celyramos</span>
+        </a>
+      </li>
+      <li class="is-active">
+        <a href="/contact" aria-current="page">
+          <span class="icon is-small">
+            <i class="fas fa-envelope-open" aria-hidden="true"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <form class="form" action="" method="post">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="John Smith">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input" type="text" placeholder="e.g. john.smith@mydomain.com">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Hello world..."></textarea>
+      </div>
+    </div>
+
+    <div class="field is-grouped is-grouped-right">
+      <div class="control">
+        <label class="checkbox">
+          <input type="checkbox">
+          receive a copy
+        </label>
+      </div>
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+<%- include('./partials/footer'); %>

@@ -1,0 +1,24 @@
+/*
+  RESET CSS
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0; margin: 0;
+}
+html,body{
+  display: block;
+  height: 100%; width: 100%;
+  font-family: "Lato", sans-serif, arial;
+  color: #1E1E1E;
+}
+ul,li,a{
+  margin: 0; padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  color: #3273DC;
+}

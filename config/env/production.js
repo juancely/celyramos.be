@@ -2,6 +2,7 @@
 
 module.exports = {
 
-  port: 8000,
+  name: "production"
+, port: 8080
 
 }

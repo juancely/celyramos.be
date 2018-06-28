@@ -1,0 +1,114 @@
+.logo{
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cr-it-logo{
+  width: 200px; height: 200px;
+  background-image: url('/assets/img/logo/CR-IT-logo.png');
+}
+
+.cr-it-black-logo-small{
+  width: 100px; height: 100px;
+  background-image: url('/assets/img/logo/CR-IT-black-logo.png');
+}
+.cr-it-oceanblue-logo-small{
+  width: 100px; height: 100px;
+  background-image: url('/assets/img/logo/CR-IT-oceanblue-logo.png');
+}
+
+.title{
+  color: #19242E;
+}
+
+.main-inner{
+  /* display: block;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto; */
+  padding: 0 20px;
+}
+
+.main,
+.main-header,
+.main-container,
+.main-footer{
+  display: block;
+  width: 100%;
+}
+.main{
+  position: absolute;
+  z-index: 1;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  color: #1E1E1E;
+}
+
+.main-container{
+  min-height: 100%;
+  padding: 50px 20px;
+}
+
+.main-footer{
+  position: relative;
+  height: 100%;
+}
+.main-footer h4{
+  margin-bottom: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.main-footer .columns{
+  padding: 50px 0;
+}
+
+.main-footer .icons a{
+  font-size: 40px;
+}
+
+@media all and (min-width: 768px){
+  .main-footer{
+    background-size: contain;
+  }
+  .main-footer .columns .logo{
+    width: auto; height: auto;
+    background-size: contain;
+  }
+}
+
+#partner{
+  min-height: 50%;
+  background-color: #F2F2F2;
+}
+#partner h3.title{
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: #19242E;
+}
+#partner .columns{
+  border-bottom: 1px solid rgba(0,0,0,. 5);
+  margin-bottom: 10px;
+}
+
+#society{
+  position: relative;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-image: url('/assets/img/footer-background.svg');
+  background-color: #19242E; /* #EABF56 */
+  color: rgba(255,255,255, .4);
+  text-align: center;
+}
+
+#society .copyrights{
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
