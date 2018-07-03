@@ -45,9 +45,14 @@
   color: #1E1E1E;
 }
 
+.main-header{
+  display: none;
+}
+
 .main-container{
-  min-height: 100%;
-  padding: 50px 20px;
+  /* min-height: 100%; */
+  /* padding: 50px 20px; */
+  display: none;
 }
 
 .main-footer{
@@ -89,13 +94,16 @@
   color: #19242E;
 }
 #partner .columns{
-  border-bottom: 1px solid rgba(0,0,0,. 5);
+  border-bottom: 2px solid rgba(0,0,0,.1);
   margin-bottom: 10px;
+}
+#partner .partner_logo{
+  text-align: center;
 }
 
 #society{
   position: relative;
-  min-height: 50%;
+  min-height: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;

@@ -35,22 +35,12 @@ const setServer = async () => {
 
 app
   .get('/', (req, res, next) => {
-    res.render('index',{
-      title: "CelyRamos"
-    });
-  })
-  .get('/about', (req, res, next) => {
-    res.render('about',{
-      title: "About"
-    });
-  })
-  .get('/contact', (req, res, next) => {
     res.render('contact',{
       title: "Contact"
     });
   })
 
-  .post('/contact', (req, res, next) => {
+  .post('/', (req, res, next) => {
     res.render('contact',{
       title: "Contact"
     });
